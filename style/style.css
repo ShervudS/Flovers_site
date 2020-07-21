@@ -1,0 +1,112 @@
+@font-face {
+	font-family: 'Brushwell';
+	src: url('../fonts/Brushwell-4BBJD.eot');
+	src: local('☺'), url('../fonts/Brushwell-4BBJD.woff') format('woff'), url('../fonts/Brushwell-4BBJD.ttf') format('truetype'), url('../fonts/Brushwell-4BBJD.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Louis George Cafe';
+	src: url('../fonts/Louis_George_Cafe.eot');
+	src: local('☺'), url('../fonts/Louis_George_Cafe.woff') format('woff'), url('../fonts/Louis_George_Cafe.ttf') format('truetype'), url('../fonts/Louis_George_Cafe.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Nextart';
+	src: url('../fonts/Nextartlight.eot');
+	src: local('☺'), url('../fonts/Nextartlight.woff') format('woff'), url('../fonts/Nextartlight.ttf') format('truetype'), url('../fonts/Nextartlight.svg') format('svg');
+	font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+	font-family: 'Red Velvet';
+	src: url('../fonts/Red Velvet - Demo.eot');
+	src: local('☺'), url('../fonts/Red Velvet - Demo.woff') format('woff'), url('../fonts/Red Velvet - Demo.ttf') format('truetype'), url('../fonts/Red Velvet - Demo.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+*,
+*:before,
+*:after{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1176px;
+    margin: 0 auto;
+}
+.header{
+    max-height: 910px;
+    /* height: 100%; */
+    width: 100%;
+    overflow: auto;
+    background-image: url(../img/BG_flovers.png);
+}
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px;
+    margin-top: 64px;
+}
+.nav_item{
+    font-family: "Nextart";
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    
+    border: 1px transparent solid; 
+    padding: 10px 0;
+    margin-right: 50px;
+}
+.nav_item:hover{
+    border-bottom: 1px #fff solid;
+}
+.logo{
+    margin-top: 175px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo_text{
+    font-family: "Brushwell";
+    font-size: 76px;
+    border-bottom:1px #fff solid;
+}
+.title_text{
+    margin-top: 35px;
+    font-family: "Red Velvet";
+    font-size: 67px;
+    text-align: center;
+    color: #fff;
+}
+.subtitle_text{
+    font-family: "Louis George Cafe";
+    font-size: 19px;
+    line-height: 30px;
+    color: #ffffff;
+    text-align: center;
+
+    margin: 36px auto;
+    max-width: 910px;
+}
+.slider{
+    margin: 154px 49px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dote{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-right: 5px;
+}
