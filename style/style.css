@@ -22,8 +22,8 @@
 }
 @font-face {
 	font-family: 'Red Velvet';
-	src: url('../fonts/Red Velvet - Demo.eot');
-	src: local('☺'), url('../fonts/Red Velvet - Demo.woff') format('woff'), url('../fonts/Red Velvet - Demo.ttf') format('truetype'), url('../fonts/Red Velvet - Demo.svg') format('svg');
+	src: url('../fonts/red-velvet-regular.eot');
+	src: local('☺'), url('../fonts/red-velvet-regular.woff') format('woff'), url('../fonts/red-velvet-regular.ttf') format('truetype'), url('../fonts/red-velvet-regular.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -40,11 +40,13 @@
     margin: 0 auto;
 }
 .header{
-    max-height: 910px;
-    /* height: 100%; */
     width: 100%;
     overflow: auto;
-    background-image: url(../img/BG_flovers.png);
+    background: url(../img/BG_flovers.png) scroll no-repeat;
+    -moz-background-size:100%;
+    -webkit-background-size:100%;
+    -o-background-size:100%;
+    background-size: cover;
 }
 .nav{
     display: flex;
@@ -55,7 +57,7 @@
 }
 .nav_item{
     font-family: "Nextart";
-    font-size: 20px;
+    font-size: calc(24px + 4 * ((100vw - 320px) / (1280 - 320)));
     text-transform: uppercase;
     text-decoration: none;
     color: #fff;
@@ -69,7 +71,7 @@
     border-bottom: 1px #fff solid;
 }
 .logo{
-    margin-top: 175px;
+    margin-top: 19.2%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -77,13 +79,14 @@
 }
 .logo_text{
     font-family: "Brushwell";
-    font-size: 76px;
+    font-size: calc(24px + 42px * (100vw/1366));
+    color: #fff;
     border-bottom:1px #fff solid;
 }
 .title_text{
-    margin-top: 35px;
+    margin-top: 3.9%;
     font-family: "Red Velvet";
-    font-size: 67px;
+    font-size: calc(24px + 16px * ((100vw - 320px) / (1280 - 320)));
     text-align: center;
     color: #fff;
 }
@@ -94,11 +97,11 @@
     color: #ffffff;
     text-align: center;
 
-    margin: 36px auto;
+    margin:  auto;
     max-width: 910px;
 }
 .slider{
-    margin: 154px 49px 0px 0px;
+    margin: 16.9% 0 4.9% 0px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -107,6 +110,329 @@
     width: 15px;
     height: 15px;
     border-radius: 50%;
+    background-color: #a3958e;
+    margin: 0px 5px 5px 0px;
+}
+    /* About */
+.about_me_content{
+    max-height: 527px;
+    margin: 6% 0 6% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.about__img{
+    margin-right: 40px;
+}
+.about__text{
+    width: 52%;
+    padding: 34px;
+    height: 368px;
+    border: 1px transparent solid;
+    border-left: 1px #000 solid;
+}
+.about__text__title{
+    font-family: "Brushwell";
+    font-size: 76px;
+}
+.about__text_text{
+    font-family: "Louis George Cafe";
+    font-size: 19px;
+    color: #000;
+}
+.about__text_button{
+    margin: 6%;
+    font-family: "Louis George Cafe";
+    font-size: 16px;
+    border: 1px solid #2b2b2b;
     background-color: #fff;
-    margin-right: 5px;
+    padding: 2% 5.1%;
+    letter-spacing: 0,94px;
+    text-transform: uppercase;
+}
+.about__text_button:hover{
+    background-color:#2b2b2b;
+    color:#fff;
+}
+    /* PORTFOLIO */
+.portfolio{
+    max-height: 416px;
+    background: url(../img/BG_Portfolio.png) scroll no-repeat;
+    -moz-background-size:100%;
+    -webkit-background-size:100%;
+    -o-background-size:100%;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.portfolio_content_title{
+    font-family: "Brushwell";
+    font-size: 76px;
+    margin-top: 37px;
+}
+.porfolio_content_subtitle{
+    font-family: "Red Velvet";
+    font-size: 67px;
+    color: #fff;
+    margin-top: 28px;
+    text-align: center;
+    padding-bottom: 29px;
+    border-bottom: 2px #fff solid;
+}
+.portfolio_text{
+    font-family: "Red Velvet";
+    font-size: 29px;
+    margin-top: 24px;
+}
+.portfolio_content_but{
+    margin: 54px 0 36px 0;
+    font-family: "Louis George Cafe";
+    font-size: 16px;
+    border: 1px solid #2b2b2b;
+    background-color: transparent;
+    padding: 1% 4%;
+    letter-spacing: 0,94px;
+    text-transform: uppercase;
+}
+.portfolio_content_but:hover{
+    background-color:#fff;
+    color:#000;
+}
+
+        /* Foto_portfolio */
+.prf_foto_content{
+    display: flex;
+    justify-content: center;
+    margin: 70px 0 0 0;
+}
+.prf_content_collum{
+    overflow: hidden;
+    max-height: 1100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.prf_collum_item_big{
+    margin: 10px;
+    max-width: 365px;
+    max-height: 540px;
+}
+.prf_collum_item_smal{
+    margin: 10px;
+    max-width: 365px;
+    max-width: 260px;
+}
+.prf_item_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.prf_collum_item_big:hover,
+.prf_collum_item_smal:hover{
+    transform: scale(1.5);
+}
+.slider_prf{
+    margin: 40px 0 70px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.video_header{
+    max-height: 416px;
+    background: url(../img/BG_Portfolio.png) scroll no-repeat;
+    -moz-background-size:100%;
+    -webkit-background-size:100%;
+    -o-background-size:100%;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.video_title{
+    font-family: "Red Velvet";
+    font-size: 67px;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 11% 0 0 0;
+    text-align: center;
+
+    padding-bottom: 29px;
+    border-bottom: 2px #fff solid;
+}
+.video_subtitle{
+    font-family: "Red Velvet";
+    font-size: 29px;
+    margin: 24px 0 88px 0;
+    max-width: 905px;
+}
+.video_content{
+    margin: 60px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 2px #000 solid;
+}
+.main_video{
+    height: 520px;
+    width: 945px;
+}
+.video_text{
+    margin: 45px 0 0 0;
+    text-align: center;
+    font-family: "Louis George Cafe";
+    font-size: 19px;
+    max-width: 945px;
+}
+.small_video{
+    margin: 50px 0 0 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.small_video_item{
+    display: flex;
+    align-items: center;
+}
+.item_video_header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.img_video_header{
+    max-width: 365px;
+    max-height: 200px;
+    object-fit: cover;
+}
+.item_video_text{
+    margin: 45px 0 0 0;
+    max-width: 255px;
+    text-align: center;
+    font-family: "Louis George Cafe";
+    font-size: 19px;
+}
+.video_but{
+    margin: 50px 0 45px 0;
+    font-family: "Louis George Cafe";
+    font-size: 16px;
+    border: 1px solid #2b2b2b;
+    background-color: transparent;
+    padding: 1% 4%;
+    letter-spacing: 0,94px;
+    text-transform: uppercase;
+}
+.video_but:hover{
+    background-color:#000;
+    color:#fff;
+}
+
+        /* testimonials */
+.tetmon_title{
+    font-family: "Brushwell";
+    font-size: 76px;
+    text-align: center;
+    margin: 50px 0 0 0;
+}
+.tetmon_subtitle{
+    font-family: "Nextart";
+    font-size: calc(24px + 4 * ((100vw - 320px) / (1280 - 320)));
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    margin: 40px 0 0 0;
+}
+.tetmon_couple{
+    margin: 40px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+.tetmon_couple_item{
+    width: 24%;
+}
+.counle_item_img{
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+}
+.tetmon_couple_item_content{
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    height: 65%;
+    border: 1px #000 solid;
+    position: relative;
+    bottom: 80px;
+}
+.couple_item_title{
+    font-family: "Red Velvet";
+    font-size: 18px;
+    margin: 80px 0 0 0;
+    text-align: center;
+}
+.couple_item_text{
+    font-family: "Louis George Cafe";
+    font-size: 19px;
+    text-align: center;
+    margin: 40px 0 0 0;
+}
+.tetmon_but{
+    display: block;
+    margin: 0 auto;
+    font-family: "Louis George Cafe";
+    font-size: 16px;
+    border: 1px solid #2b2b2b;
+    background-color: transparent;
+    padding: 1% 4%;
+    letter-spacing: 0,94px;
+    text-transform: uppercase;
+}
+.tetmon_but:hover{
+    background-color:#000;
+    color:#fff;
+}
+
+    /* Contact */
+.contact{
+    height: 100%;
+    background: url(../img/BG_contatct.png) scroll no-repeat;
+    -moz-background-size:100%;
+    -webkit-background-size:100%;
+    -o-background-size:100%;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contact_title{
+    font-family: "Brushwell";
+    font-size: 76px;
+    text-align: center;
+    margin: 50px 0 0 0;
+}
+.contact_subtitle{
+        font-family: "Nextart";
+        font-size: calc(24px + 4 * ((100vw - 320px) / (1280 - 320)));
+        text-transform: uppercase;
+        text-decoration: none;
+        text-align: center;
+        margin: 40px 0 0 0;
+        padding: 0 0 35px 0;
+        border-bottom:1px #000 solid;
+}
+.contact_content{
+    margin: 25px 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+.content_form{
+    width: 25%;
 }
