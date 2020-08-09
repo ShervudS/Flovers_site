@@ -79,14 +79,14 @@
 }
 .logo_text{
     font-family: "Brushwell";
-    font-size: calc(24px + 42px * (100vw/1366));
+    font-size: calc(24px + 42 * ((100vw - 320px) / (1280 - 320)));
     color: #fff;
     border-bottom:1px #fff solid;
 }
 .title_text{
     margin-top: 3.9%;
     font-family: "Red Velvet";
-    font-size: calc(24px + 16px * ((100vw - 320px) / (1280 - 320)));
+    font-size: calc(24px + 16 * ((100vw - 320px) / (1280 - 320)));
     text-align: center;
     color: #fff;
 }
@@ -411,6 +411,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    overflow: auto;
 }
 .contact_title{
     font-family: "Brushwell";
@@ -434,5 +435,57 @@
     justify-content: center;
 }
 .content_form{
-    width: 25%;
+    margin: 0 20px 0 0;
+    width:350px;
+    text-align: left;
+}
+.contact_form_text{
+    font-family: "Louis George Cafe";
+    font-size: 19px;
+    margin: 0 0 25px 0;
+}
+.contact_form_title{
+    font-family: "Louis George Cafe";
+    font-size: 19px;
+    text-transform: uppercase;
+}
+.small_form{
+    width: 345px;
+    height: 45px;
+    border: 1px solid #000;
+    background-color: transparent;
+    margin: 20px 0 15px 0;
+}
+.small_form:focus,
+.big_form:focus{
+    background-color: #fff;
+}
+.big_form{
+    width: 345px;
+    height: 150px;
+    border:1px solid #000 ;
+    background-color: transparent;
+    margin: 20px 0 0 0;
+}
+
+    /* footer */
+.footer{
+    height: 415px;
+    background: url(../img/footer_bg.png) scroll no-repeat;
+    -moz-background-size:100%;
+    -webkit-background-size:100%;
+    -o-background-size:100%;
+    background-size: cover;
+    overflow: auto;
+}
+.social_img{
+    display: block;
+    margin: 45px auto 0 auto;
+}
+.tetx_foter{
+    text-align: center;
+    color: #fff;
+    font-family: "Louis George Cafe";
+    font-size: 19px;
+    margin: 50px 0 0 0;
 }
