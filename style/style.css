@@ -70,6 +70,32 @@
 .nav_item:hover{
     border-bottom: 1px #fff solid;
 }
+    /* Burger menu*/
+.burger{
+    display: none;
+}
+.circle_burger{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    overflow: auto;
+    cursor: pointer;
+}
+.Burger_linear{
+    margin: 15px 0 0 0;
+}
+.linear{
+    width: 40px;
+    height: 2px;
+    background-color: #000;
+    margin: 5px auto 0 auto;
+}
+.circle_burger:hover{
+    background-color: #fff;
+}
+
+
 .logo{
     margin-top: 19.2%;
     display: flex;
@@ -86,7 +112,7 @@
 .title_text{
     margin-top: 3.9%;
     font-family: "Red Velvet";
-    font-size: calc(24px + 16 * ((100vw - 320px) / (1280 - 320)));
+    font-size: calc(16px + 16 * ((100vw - 320px) / (1280 - 320)));
     text-align: center;
     color: #fff;
 }
@@ -115,7 +141,7 @@
 }
     /* About */
 .about_me_content{
-    max-height: 527px;
+    /* max-height: 527px; */
     margin: 6% 0 6% 0;
     display: flex;
     justify-content: center;
@@ -134,17 +160,17 @@
 }
 .about__text__title{
     font-family: "Brushwell";
-    font-size: 76px;
+    font-size: calc(24px + 52 * ((100vw - 320px) / (1280 - 320)));
 }
 .about__text_text{
     font-family: "Louis George Cafe";
-    font-size: 19px;
+    font-size: calc(14px + 8 * ((100vw - 320px) / (1280 - 320)));
     color: #000;
 }
 .about__text_button{
     margin: 6%;
     font-family: "Louis George Cafe";
-    font-size: 16px;
+    font-size: calc(10px + 8 * ((100vw - 320px) / (1280 - 320)));
     border: 1px solid #2b2b2b;
     background-color: #fff;
     padding: 2% 5.1%;
@@ -489,3 +515,4 @@
     font-size: 19px;
     margin: 50px 0 0 0;
 }
+

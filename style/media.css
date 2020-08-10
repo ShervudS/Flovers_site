@@ -1,0 +1,29 @@
+@media (max-width: 1280px) {
+    .nav{
+        flex-direction: column;
+        margin: 10px 0 0 0;
+        display: none;
+    }
+    .burger{
+        display: block;
+    }
+}
+@media (max-width: 720px){
+    .container{
+    width: 97%;
+    }
+    .about_me_content{
+        flex-direction: column;
+    }
+    .about__text{
+        width: 90%;
+        border-left: none;
+        border-top: 1px solid #000;
+    }
+}
+    /* mobile and Iphone 5 */
+@media (max-width: 320px){
+    .about__text{
+        width: 95%;
+    }
+}
