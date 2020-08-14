@@ -16,14 +16,29 @@
         flex-direction: column;
     }
     .about__text{
+        padding: 15px 0px 0px 0px;
         width: 90%;
         border-left: none;
         border-top: 1px solid #000;
+        text-align: center;
+    }
+    .about__img{
+        margin: 0 0 15px 0;
     }
 }
     /* mobile and Iphone 5 */
 @media (max-width: 320px){
     .about__text{
         width: 95%;
+    }
+    .porfolio_content_subtitle{
+        margin: 0px 0px 0px 0px;
+        padding: 0px 0px 10px 0px;
+    }
+    .prf_foto_content{
+        flex-direction: column;
+    }
+    .tetmon_couple{
+        flex-direction: column;
     }
 }

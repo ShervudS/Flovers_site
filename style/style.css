@@ -39,6 +39,7 @@
     max-width: 1176px;
     margin: 0 auto;
 }
+    /* header */
 .header{
     width: 100%;
     overflow: auto;
@@ -94,8 +95,6 @@
 .circle_burger:hover{
     background-color: #fff;
 }
-
-
 .logo{
     margin-top: 19.2%;
     display: flex;
@@ -118,7 +117,7 @@
 }
 .subtitle_text{
     font-family: "Louis George Cafe";
-    font-size: 19px;
+    font-size: calc(12px + 3 * ((100vw - 320px) / (1280 - 320)));
     line-height: 30px;
     color: #ffffff;
     text-align: center;
@@ -154,7 +153,7 @@
 .about__text{
     width: 52%;
     padding: 34px;
-    height: 368px;
+    max-height: 368px;
     border: 1px transparent solid;
     border-left: 1px #000 solid;
 }
@@ -183,8 +182,8 @@
 }
     /* PORTFOLIO */
 .portfolio{
-    max-height: 416px;
-    background: url(../img/BG_Portfolio.png) scroll no-repeat;
+    /* max-height: 416px; */
+    background: url(../img/BG_Portfolio.png) scroll repeat;
     -moz-background-size:100%;
     -webkit-background-size:100%;
     -o-background-size:100%;
@@ -202,7 +201,7 @@
 }
 .porfolio_content_subtitle{
     font-family: "Red Velvet";
-    font-size: 67px;
+    font-size: calc(20px + 55 * ((100vw - 320px) / (1280 - 320)));
     color: #fff;
     margin-top: 28px;
     text-align: center;
@@ -257,9 +256,11 @@
     height: 100%;
     object-fit: cover;
 }
-.prf_collum_item_big:hover,
-.prf_collum_item_smal:hover{
-    transform: scale(1.5);
+@media screen{
+    .prf_collum_item_big:hover,
+    .prf_collum_item_smal:hover{
+        transform: scale(1.5);
+    }
 }
 .slider_prf{
     margin: 40px 0 70px 0;
@@ -267,8 +268,10 @@
     justify-content: center;
     align-items: center;
 }
+
+    /* VIDEO */
 .video_header{
-    max-height: 416px;
+    /* max-height: 416px; */
     background: url(../img/BG_Portfolio.png) scroll no-repeat;
     -moz-background-size:100%;
     -webkit-background-size:100%;
@@ -321,6 +324,7 @@
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 .small_video_item{
     display: flex;
@@ -337,7 +341,7 @@
     object-fit: cover;
 }
 .item_video_text{
-    margin: 45px 0 0 0;
+    margin: 45px 0 15px 0;
     max-width: 255px;
     text-align: center;
     font-family: "Louis George Cafe";
@@ -427,7 +431,7 @@
     /* Contact */
 .contact{
     height: 100%;
-    background: url(../img/BG_contatct.png) scroll no-repeat;
+    background: url(../img/BG_contatct.png) scroll;
     -moz-background-size:100%;
     -webkit-background-size:100%;
     -o-background-size:100%;
